@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">SharedP App</string>
+
+    <array name="image_movie">
+        <item>https://www.filmsite.org/featured/star-wars-sequel-C.jpg</item>
+        <item>https://www.filmsite.org/featured/movie-fr-jurpark.jpg</item>
+        <item>https://www.filmsite.org/franchises/the-dark-knight-trilogy-240x240.jpg</item>
+        <item>https://www.filmsite.org/featured/movie-fr-spiderman.jpg</item>
+        <item>https://www.filmsite.org/addons/deadpool-franchise.jpg</item>
+        <item>https://www.filmsite.org/featured/movie-fr-shrek.jpg</item>
+        <item>https://www.filmsite.org/featured/movie-fr-batman.jpg</item>
+        <item>https://www.filmsite.org/featured/movie-fr-xmenB.jpg</item>
+        <item>https://www.filmsite.org/featured/movie-fr-hpotter.jpg</item>
+        <item>https://www.filmsite.org/featured/movie-fr-matrix.jpg</item>
+    </array>
 </resources>

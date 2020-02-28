@@ -3,11 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="home">
-
-    </TextView>
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
