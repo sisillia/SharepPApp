@@ -1,3 +1,3 @@
 package com.example.sharedpapp.model
 
-data class ImageModel (val photo:String)
+data class ImageModel (val photo:Int)

@@ -1,8 +1,10 @@
 package com.example.sharedpapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,6 +31,7 @@ class ImageDetailActivity : AppCompatActivity() {
         mPager = findViewById(R.id.view_pager)
         val adapter = ImageSlidingAdapter(this)
         mPager.adapter = adapter
+
     }
 
 }

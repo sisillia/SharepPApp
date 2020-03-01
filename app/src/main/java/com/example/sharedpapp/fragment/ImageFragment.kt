@@ -36,11 +36,12 @@ class ImageFragment : Fragment() {
     }
 
     fun getListImage(): ArrayList<ImageModel>{
-        val dataImg = resources.getStringArray(R.array.image_movie)
+
+        val images = arrayOf(R.drawable.cat1,R.drawable.cat2, R.drawable.cat3)
 
         val listImg = ArrayList<ImageModel>()
-        for (position in dataImg.indices){
-            val img = ImageModel(dataImg[position])
+        for (position in images.indices){
+            val img = ImageModel(images[position])
             listImg.add(img)
         }
         return listImg
