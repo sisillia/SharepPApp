@@ -5,13 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.app.Fragment
-import android.media.Image
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sharedpapp.ImageModel
+import com.example.sharedpapp.model.ImageModel
 import com.example.sharedpapp.R
 import com.example.sharedpapp.adapter.ImageAdapter
-import kotlinx.android.synthetic.main.fragment_image.*
 
 class ImageFragment : Fragment() {
 
@@ -54,5 +52,4 @@ class ImageFragment : Fragment() {
         val listHeroAdapter = ImageAdapter(list)
         rv_img.adapter = listHeroAdapter
     }
-
 }

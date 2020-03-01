@@ -1,15 +1,23 @@
 package com.example.sharedpapp.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.sharedpapp.ImageModel
+import com.example.sharedpapp.ImageDetailActivity
+import com.example.sharedpapp.LoginActivity
+import com.example.sharedpapp.model.ImageModel
 import com.example.sharedpapp.R
 import kotlinx.android.synthetic.main.recycler_view_image.view.*
 
+
+
 class ImageAdapter(private val listImage: ArrayList<ImageModel>): RecyclerView.Adapter<ImageAdapter.ListViewHolder>() {
+
+//    private var onItemClickCallback: OnItemClickCallback? = null
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {
         val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.recycler_view_image, viewGroup, false)
@@ -28,6 +36,14 @@ class ImageAdapter(private val listImage: ArrayList<ImageModel>): RecyclerView.A
                 Glide.with(itemView.context)
                     .load(listImage.photo)
                     .into(rv_image)
+
+                itemView.setOnClickListener {
+//                    Log.d("test", adapterPosition.toString())
+
+                    val intent = Intent(context.applicationContext, ImageDetailActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+                    context.applicationContext.startActivity(intent)
+                }
             }
         }
     }
