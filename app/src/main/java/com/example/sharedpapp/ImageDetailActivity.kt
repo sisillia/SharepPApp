@@ -32,6 +32,8 @@ class ImageDetailActivity : AppCompatActivity() {
         val adapter = ImageSlidingAdapter(this)
         mPager.adapter = adapter
 
+        indicator.setViewPager(mPager)
+
     }
 
 }
